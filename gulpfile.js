@@ -18,16 +18,18 @@ gulp.task('imageMin', async function() {
 
 //Compile scripts
 gulp.task('scripts', async function() {
-    gulp.src('js/*.js')
+    gulp.src('js/**/*.js', 'node_modules/**/*.js', 'plugins/**/*.js', 'styles/**/*.js')
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 
-//All tasks in 1 command
-gulp.task('default', gulp.series(['copyHtml', 'imageMin', 'scripts']));
-
-gulp.task('watch', async function(){
-    gulp.watch('src/js/*.js', gulp.series('scripts'));
-    gulp.watch('src/images/*', gulp.serie('imageMin'));
+//Compile stylesheets
+gulp.task('styles', async function() {
+    gulp.src('styles/main_styles.css', 'styles/**/*.css', 'node_modules/**/*.css' , 'plugins/**/*.css')
+        .pipe(concat('main.css'))
+        .pipe(gulp.dest('dist/css'));
 });
+
+//All tasks in 1 command
+gulp.task('default', gulp.series(['copyHtml', 'imageMin', 'scripts', 'styles']));
