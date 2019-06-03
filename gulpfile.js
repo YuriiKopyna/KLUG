@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
-
+const concat = require('gulp-concat');
 
 //Copying html file
 gulp.task('copyHtml', async function() {
@@ -23,6 +23,13 @@ gulp.task('scripts', async function() {
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
+
+//Concatination js files
+gulp.task('scripts', function() {
+    return gulp.src('./lib/*.js')
+      .pipe(concat('all.js'))
+      .pipe(gulp.dest('./dist/js'));
+  });
 
 //All tasks in 1 command
 gulp.task('default', gulp.series(['copyHtml', 'imageMin', 'scripts']));
