@@ -24,13 +24,6 @@ gulp.task('scripts', async function() {
         .pipe(gulp.dest('dist/js'));
 });
 
-//Concatination js files
-gulp.task('scripts', function() {
-    return gulp.src('./lib/*.js')
-      .pipe(concat('all.js'))
-      .pipe(gulp.dest('./dist/js'));
-  });
-
 //All tasks in 1 command
 gulp.task('default', gulp.series(['copyHtml', 'imageMin', 'scripts']));
 
