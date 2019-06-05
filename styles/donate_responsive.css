@@ -106,6 +106,9 @@
 	{
 		display: block;
 	}
+	.menu_content img {
+		width: 50px;
+	}
 	.home_title
 	{
 		font-size: 48px;
