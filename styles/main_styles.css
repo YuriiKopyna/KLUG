@@ -878,6 +878,10 @@ section
 {
 	margin-top: 31px;
 }
+a.nav-link 
+{
+	color: #fff;
+}
 
 /*********************************
 8. Sermons
