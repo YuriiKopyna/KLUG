@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>KLUG</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Demo project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+  <title>KLUG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="styles/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+  <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
+
 <body>
 
-<div class="super_container">
+  <div class="super_container">
 	
 	<!-- Header -->
 
@@ -44,8 +49,8 @@
 								</ul>
 								<div class="top_bar_social ml-auto">
 									<ul class="social_list">
-										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -148,6 +153,7 @@
 						<div class="home_title">Kotlin Lviv User Group</div>
 						<div class="home_text">We are the community for share our knowleges</div>
 						
+						
 					</div>
 				</div>
 			</div>
@@ -213,8 +219,108 @@
 						<div class="about_text">
 							<p>Lviv Kotlin User Group is a community of Kotlin developments and fans. We are going to organize regular meetings, where developers share their experiences with Kotlin language. We want to populate Kotlin between engineers. </p>
 						</div>
-						<div class="button about_button"><a href="about.html">read story</a></div>
-						<div class="button about_button"><a href="#">registration</a></div>
+						<div class="button about_button"><a href="#">read story</a></div>
+						<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog cascading-modal" role="document">
+		  <!--Content-->
+		  <div class="modal-content">
+	  
+			<!--Modal cascading tabs-->
+			<div class="modal-c-tabs">
+	  
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+				<li class="nav-item">
+				  <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+					Login</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+					Register</a>
+				</li>
+			  </ul>
+	  
+			  <!-- Tab panels -->
+			  <div class="tab-content">
+				<!--Panel 7-->
+				<div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+	  
+				  <!--Body-->
+				  <div class="modal-body mb-1">
+					<div class="md-form form-sm mb-5">
+					  <i class="fas fa-envelope prefix"></i>
+					  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+					  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+					</div>
+	  
+					<div class="md-form form-sm mb-4">
+					  <i class="fas fa-lock prefix"></i>
+					  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+					  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+					</div>
+					<div class="text-center mt-2">
+					  <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+					</div>
+				  </div>
+				  <!--Footer-->
+				  <div class="modal-footer">
+					<div class="options text-center text-md-right mt-1">
+					  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+					  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+					</div>
+					<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+				  </div>
+	  
+				</div>
+				<!--/.Panel 7-->
+	  
+				<!--Panel 8-->
+				<div class="tab-pane fade" id="panel8" role="tabpanel">
+	  
+				  <!--Body-->
+				  <div class="modal-body">
+					<div class="md-form form-sm mb-5">
+					  <i class="fas fa-envelope prefix"></i>
+					  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+					  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+					</div>
+	  
+					<div class="md-form form-sm mb-5">
+					  <i class="fas fa-lock prefix"></i>
+					  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+					  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+					</div>
+	  
+					<div class="md-form form-sm mb-4">
+					  <i class="fas fa-lock prefix"></i>
+					  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+					  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+					</div>
+	  
+					<div class="text-center form-sm mt-2">
+					  <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+					</div>
+	  
+				  </div>
+				  <!--Footer-->
+				  <div class="modal-footer">
+					<div class="options text-right">
+					  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+					</div>
+					<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+				<!--/.Panel 8-->
+			  </div>
+	  
+			</div>
+		  </div>
+		  <!--/.Content-->
+		</div>
+	  </div>
+	  <!--Modal: Login / Register Form-->
+	  <div class="button about_button"><a href="" data-toggle="modal" data-target="#modalLRForm">registration</a></div>
 					</div>
 				</div>
 			</div>
@@ -256,8 +362,8 @@
 								<div class="sermon_links">
 									<ul>
 										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fas fa-file-pdf" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
 										<li><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></li>
 									</ul>
 								</div>
@@ -288,8 +394,8 @@
 								<div class="sermon_links">
 									<ul>
 										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fas fa-file-pdf" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
 										<li><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></li>
 									</ul>
 								</div>
@@ -320,8 +426,8 @@
 								<div class="sermon_links">
 									<ul>
 										<li><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fas fa-file-pdf" aria-hidden="true"></i></a></li>
+										<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
 										<li><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></li>
 									</ul>
 								</div>
@@ -735,13 +841,20 @@
 	</footer>
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+  <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="plugins/colorbox/jquery.colorbox-min.js"></script>
-<script src="js/custom.js"></script>
+<script src="js/custom.js"></script> 
 </body>
+
 </html>
