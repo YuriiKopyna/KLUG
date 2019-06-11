@@ -10631,6 +10631,10 @@ body {
   color: #fff;
 }
 
+.progress {
+  width: 85%;
+  margin: auto;
+}
 .navbar-nav .nav-item.dropdown .dropdown-toggle::after {
   width: 1rem;
   text-align: center;
