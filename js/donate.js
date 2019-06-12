@@ -13,8 +13,7 @@
 
 ******************************/
 
-$(document).ready(function()
-{
+$(document).ready(function () {
 	"use strict";
 
 	/* 
@@ -31,13 +30,11 @@ $(document).ready(function()
 
 	setHeader();
 
-	$(window).on('resize', function()
-	{
+	$(window).on('resize', function () {
 		setHeader();
 	});
 
-	$(document).on('scroll', function()
-	{
+	$(document).on('scroll', function () {
 		setHeader();
 	});
 
@@ -50,14 +47,11 @@ $(document).ready(function()
 
 	*/
 
-	function setHeader()
-	{
-		if($(window).scrollTop() > 100)
-		{
+	function setHeader() {
+		if ($(window).scrollTop() > 100) {
 			header.addClass('scrolled');
 		}
-		else
-		{
+		else {
 			header.removeClass('scrolled');
 		}
 	}
@@ -68,14 +62,10 @@ $(document).ready(function()
 
 	*/
 
-	function initHeaderSearch()
-	{
-		if($('.search_button').length)
-		{
-			$('.search_button').on('click', function()
-			{
-				if($('.header_search_container').length)
-				{
+	function initHeaderSearch() {
+		if ($('.search_button').length) {
+			$('.search_button').on('click', function () {
+				if ($('.header_search_container').length) {
 					$('.header_search_container').toggleClass('active');
 				}
 			});
@@ -88,32 +78,23 @@ $(document).ready(function()
 
 	*/
 
-	function initMenu()
-	{
-		if(hamb.length)
-		{
-			if(menu.length)
-			{
-				hamb.on('click', function()
-				{
-					if(menuActive)
-					{
+	function initMenu() {
+		if (hamb.length) {
+			if (menu.length) {
+				hamb.on('click', function () {
+					if (menuActive) {
 						closeMenu();
 					}
-					else
-					{
+					else {
 						openMenu();
 					}
-				});	
+				});
 
-				$('.menu_close').on('click', function()
-				{
-					if(menuActive)
-					{
+				$('.menu_close').on('click', function () {
+					if (menuActive) {
 						closeMenu();
 					}
-					else
-					{
+					else {
 						openMenu();
 					}
 				});
@@ -121,14 +102,12 @@ $(document).ready(function()
 		}
 	}
 
-	function closeMenu()
-	{
+	function closeMenu() {
 		menu.removeClass('active');
 		menuActive = false;
 	}
 
-	function openMenu()
-	{
+	function openMenu() {
 		menu.addClass('active');
 		menuActive = true;
 	}
