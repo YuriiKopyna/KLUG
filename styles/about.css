@@ -239,7 +239,7 @@ section
 	width: 160px;
 	height: 46px;
 	text-align: center;
-	background: #b10707;
+	background: rgb(7, 13, 71);
 	border-radius: 3px;
 }
 .button a
