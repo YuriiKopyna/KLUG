@@ -471,7 +471,8 @@ section
 }
 .search_button
 {
-	margin-left: 46px;
+	margin-left: 20px;
+	margin-top: 20px;
 	cursor: pointer;
 }
 .search_button i
