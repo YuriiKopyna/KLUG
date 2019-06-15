@@ -73,7 +73,7 @@
 {
 	.main_nav li:not(:last-child)
 	{
-		margin-right: 45px;
+		margin-right: 30px;
 	}
 	.event_container
 	{
@@ -190,6 +190,9 @@
 	.footer_social ul
 	{
 		margin-right: 0;
+	}
+	.menu_content img {
+		width: 50px;
 	}
 }
 

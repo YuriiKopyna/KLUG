@@ -450,7 +450,7 @@ section
 }
 .main_nav li:not(:last-child)
 {
-	margin-right: 60px;
+	margin-right: 50px;
 }
 .main_nav li a
 {
@@ -471,7 +471,8 @@ section
 }
 .search_button
 {
-	margin-left: 46px;
+	margin-left: 20px;
+	margin-top: 20px;
 	cursor: pointer;
 }
 .search_button i
@@ -997,6 +998,10 @@ section
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	z-index: 0;
+}
+.quote_icon img {
+    opacity: 0.3;
+    width: 50%;
 }
 .quote_quote
 {
