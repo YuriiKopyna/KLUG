@@ -998,6 +998,10 @@ section
 	transform: translate(-50%, -50%);
 	z-index: 0;
 }
+.quote_icon img {
+    opacity: 0.3;
+    width: 50%;
+}
 .quote_quote
 {
 	font-family: 'Old Standard TT', serif;
