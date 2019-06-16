@@ -110,6 +110,9 @@
 	{
 		font-size: 48px;
 	}
+	.menu_content img {
+		width: 50px;
+	}
 	.footer
 	{
 		padding-top: 70px;
