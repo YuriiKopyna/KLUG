@@ -102,6 +102,9 @@
 	{
 		display: none;
 	}
+	.menu_content img {
+		width: 50px;
+	}
 	.hamburger
 	{
 		display: block;
