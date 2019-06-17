@@ -467,7 +467,7 @@ section
 .main_nav li a:hover,
 .main_nav li.active a
 {
-	color: rgb(3, 13, 97);
+	color: #b10707;
 }
 .search_button
 {
